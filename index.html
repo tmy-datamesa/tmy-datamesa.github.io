@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tümay Turhan — Independent researcher, builder, systems thinker. Applied AI where people, capital and constraints intersect. Problem-first, not model-first. Istanbul.">
+  <meta name="theme-color" content="#faf7f3">
+  <meta property="og:title" content="Tümay Turhan">
+  <meta property="og:description" content="Agentic systems, context, and evaluation—risk and attention in the spec. Applied AI where people, capital, and constraints intersect. Open to aligned collaboration.">
+  <meta property="og:type" content="website">
+  <title>Tümay Turhan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+
+  <!-- Ambient background layers -->
+  <div class="ambient" aria-hidden="true">
+    <span class="ambient__orb ambient__orb--1"></span>
+    <span class="ambient__orb ambient__orb--2"></span>
+    <span class="ambient__orb ambient__orb--3"></span>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="logo" href="#top">
+        <span class="logo__mark" aria-hidden="true"></span>
+        <span class="logo__text">Tümay Turhan</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#focus">Focus</a>
+        <a href="#work">Work</a>
+        <a href="#ecosystem">Build</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <details class="nav-drawer">
+        <summary class="nav-drawer-trigger" aria-label="Open menu">Menu</summary>
+        <div class="nav-drawer-panel">
+          <a href="#about">About</a>
+          <a href="#focus">Focus</a>
+          <a href="#work">Work</a>
+          <a href="#ecosystem">Build</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </details>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__flow" aria-hidden="true">
+        <svg
+          class="hero__flow-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1600 900"
+          preserveAspectRatio="xMidYMid slice"
+          focusable="false"
+        >
+          <defs>
+            <linearGradient id="wg-a" x1="18%" y1="0%" x2="82%" y2="100%">
+              <stop offset="0%"   stop-color="#c4a882" stop-opacity="0"/>
+              <stop offset="44%"  stop-color="#b8956a" stop-opacity="0.40"/>
+              <stop offset="100%" stop-color="#9a8060" stop-opacity="0.15"/>
+            </linearGradient>
+            <linearGradient id="wg-b" x1="100%" y1="20%" x2="0%" y2="85%">
+              <stop offset="0%"   stop-color="#d4c4a8" stop-opacity="0"/>
+              <stop offset="50%"  stop-color="#b8a078" stop-opacity="0.28"/>
+              <stop offset="100%" stop-color="#a68b62" stop-opacity="0.12"/>
+            </linearGradient>
+            <linearGradient id="wg-c" x1="0%" y1="55%" x2="95%" y2="45%">
+              <stop offset="0%"   stop-color="#b8956a" stop-opacity="0"/>
+              <stop offset="55%"  stop-color="#a88860" stop-opacity="0.24"/>
+              <stop offset="100%" stop-color="#8f7550" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <!-- Wave fills -->
+          <path fill="url(#wg-a)" d="M0 440 C 220 280 480 540 760 400 S 1180 260 1380 380 S 1540 330 1600 350 L1600 900 L0 900Z"/>
+          <path fill="url(#wg-b)" d="M0 900 C 320 580 640 740 980 580 S 1320 500 1600 540 L1600 900 Z"/>
+          <path fill="url(#wg-c)" d="M0 340 C 380 200 620 420 960 300 S 1280 220 1600 280 L1600 0 L0 0Z"/>
+          <path fill="rgba(184,149,106,0.14)" d="M280 900 C 420 540 780 460 1120 600 S 1480 520 1600 560 L1600 900 Z"/>
+          <path fill="rgba(168,136,98,0.10)" d="M0 700 C 260 600 520 780 880 640 S 1240 560 1600 620 L1600 900 L0 900Z"/>
+          <!-- Contour lines -->
+          <path fill="none" stroke="rgba(184,149,106,0.20)" stroke-width="1.2" stroke-linecap="round" d="M-40 500 C 200 380 440 560 720 420 S 1120 300 1360 400 S 1520 355 1640 375"/>
+          <path fill="none" stroke="rgba(138,128,110,0.15)" stroke-width="0.9" stroke-linecap="round" d="M-20 580 C 280 460 540 660 860 520 S 1180 440 1620 500"/>
+          <path fill="none" stroke="rgba(184,149,106,0.12)" stroke-width="0.8" stroke-linecap="round" d="M0 380 C 340 260 580 440 920 320 S 1260 240 1600 308"/>
+          <path fill="none" stroke="rgba(184,149,106,0.08)" stroke-width="0.7" stroke-linecap="round" d="M0 280 C 400 160 700 360 1040 240 S 1360 170 1600 220"/>
+        </svg>
+      </div>
+
+      <div class="hero__inner">
+        <p class="hero-kicker">Tümay Turhan</p>
+        <p class="hero-position">I begin with the problem, not the model.</p>
+        <h1 class="hero-h1">Independent researcher, builder, systems thinker. I design applied AI where people, capital, and constraints intersect.</h1>
+        <p class="hero-lead">
+          Agentic systems, context, and evaluation—where risk and attention are part of the spec. Open to aligned collaboration.
+        </p>
+        <div class="hero-meta">
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="#work">Selected work</a>
+          <a class="btn btn--ghost" href="https://github.com/tmy-datamesa" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section-wrap" id="about">
+      <div class="container">
+        <div class="about__grid reveal">
+          <div class="about__essay">
+            <p class="section-eyebrow">Intersection</p>
+            <p>
+              My path is not a straight line—it is an intersection. <strong>Civil engineering and construction management</strong> taught me loads, failure modes, and accountability when things break.
+              An <strong>MBA</strong>, <strong>project finance</strong>, and years in <strong>underwriting</strong> taught me how money moves, who actually decides, and how to reason under incomplete information.
+            </p>
+            <p>
+              I begin with the problem, not the model. I treat <strong>people, incentives, risk and system shape</strong> as the frame—and ask where models earn their place.
+            </p>
+            <p>
+              A belief I return to: to understand AI in the wild, you start with people. Then money. Only then do you see where augmentation fits—without illusion.
+            </p>
+            <p class="about__tagline">I learn by building; I build with intention.</p>
+          </div>
+
+          <aside id="credentials" aria-label="Education and work history">
+            <div class="cred-switcher" data-cred-switcher>
+              <div class="cred-tabs" role="tablist" aria-label="Credentials">
+                <button
+                  type="button"
+                  class="cred-tab"
+                  role="tab"
+                  id="tab-foundations"
+                  aria-selected="true"
+                  aria-controls="panel-foundations"
+                  tabindex="0"
+                >Foundations</button>
+                <button
+                  type="button"
+                  class="cred-tab"
+                  role="tab"
+                  id="tab-experience"
+                  aria-selected="false"
+                  aria-controls="panel-experience"
+                  tabindex="-1"
+                >Experience</button>
+              </div>
+              <div class="cred-viewport">
+                <div class="cred-track">
+                  <!-- Foundations panel -->
+                  <div
+                    class="cred-panel"
+                    role="tabpanel"
+                    id="panel-foundations"
+                    aria-labelledby="tab-foundations"
+                    aria-hidden="false"
+                  >
+                    <ul class="cred-list">
+                      <li class="cred-item">
+                        <div class="cred-item__main">
+                          <span class="cred-item__title">Data Scientist &amp; AI</span>
+                          <span class="cred-item__org">Workintech</span>
+                          <p class="cred-item__desc">Applied Analytics, ML, DL &amp; GenAI</p>
+                        </div>
+                        <time class="cred-item__period">2025–2026</time>
+                      </li>
+                      <li class="cred-item">
+                        <div class="cred-item__main">
+                          <span class="cred-item__title">MBA</span>
+                          <span class="cred-item__org">YTU</span>
+                          <p class="cred-item__desc">Finance, incentives, and decision-making.</p>
+                        </div>
+                        <time class="cred-item__period">2022–2023</time>
+                      </li>
+                      <li class="cred-item">
+                        <div class="cred-item__main">
+                          <span class="cred-item__title">MSc Construction Management</span>
+                          <span class="cred-item__org">YTU</span>
+                          <p class="cred-item__desc">Project delivery, planning, and cost control.</p>
+                        </div>
+                        <time class="cred-item__period">2021–2022</time>
+                      </li>
+                      <li class="cred-item">
+                        <div class="cred-item__main">
+                          <span class="cred-item__title">BSc Civil Engineering</span>
+                          <span class="cred-item__org">COMU</span>
+                          <p class="cred-item__desc">Systems thinking, structural logic, and failure discipline.</p>
+                        </div>
+                        <time class="cred-item__period">2017–2021</time>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- Experience panel -->
+                  <div
+                    class="cred-panel"
+                    role="tabpanel"
+                    id="panel-experience"
+                    aria-labelledby="tab-experience"
+                    aria-hidden="true"
+                  >
+                    <ul class="cred-list">
+                      <li class="cred-item">
+                        <div class="cred-item__main">
+                          <span class="cred-item__title">Retrocession Underwriter</span>
+                          <span class="cred-item__org">Milli Reasürans</span>
+                          <p class="cred-item__desc">Catastrophe risk &amp; portfolio exposure.</p>
+                        </div>
+                        <time class="cred-item__period">2024–2025</time>
+                      </li>
+                      <li class="cred-item">
+                        <div class="cred-item__main">
+                          <span class="cred-item__title">Facultative Underwriter</span>
+                          <span class="cred-item__org">Türk Reasürans</span>
+                          <p class="cred-item__desc">Engineering &amp; energy risk pricing.</p>
+                        </div>
+                        <time class="cred-item__period">2023–2024</time>
+                      </li>
+                      <li class="cred-item">
+                        <div class="cred-item__main">
+                          <span class="cred-item__title">Lenders&rsquo; Technical Advisor</span>
+                          <span class="cred-item__org">Pangea Consulting</span>
+                          <p class="cred-item__desc">Project finance &amp; restructuring.</p>
+                        </div>
+                        <time class="cred-item__period">2021–2023</time>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Focus -->
+    <section class="section-wrap" id="focus">
+      <div class="container">
+        <div class="focus__header reveal">
+          <p class="section-eyebrow">Domains</p>
+          <h2 class="section-title">What I focus on</h2>
+        </div>
+        <div class="focus__grid reveal">
+          <article class="focus-item">
+            <div class="focus-item__eyebrow">
+              <span class="focus-item__num" aria-hidden="true">01</span>
+              <span class="focus-item__area">Agentic Systems</span>
+            </div>
+            <h3 class="focus-item__hook">Build systems when one model is not enough.</h3>
+            <p class="focus-item__body">Routing, multi-agent flows, and decision chains that hold under real conditions.</p>
+          </article>
+          <article class="focus-item">
+            <div class="focus-item__eyebrow">
+              <span class="focus-item__num" aria-hidden="true">02</span>
+              <span class="focus-item__area">Context Engineering</span>
+            </div>
+            <h3 class="focus-item__hook">The bottleneck is rarely the model. It is context.</h3>
+            <p class="focus-item__body">What you give, when you give it, and how decisions are framed.</p>
+          </article>
+          <article class="focus-item">
+            <div class="focus-item__eyebrow">
+              <span class="focus-item__num" aria-hidden="true">03</span>
+              <span class="focus-item__area">Evaluation &amp; Reliability</span>
+            </div>
+            <h3 class="focus-item__hook">Evaluation is architecture, not a final step.</h3>
+            <p class="focus-item__body">If you cannot measure behavior, you do not know what you built.</p>
+          </article>
+          <article class="focus-item">
+            <div class="focus-item__eyebrow">
+              <span class="focus-item__num" aria-hidden="true">04</span>
+              <span class="focus-item__area">AI Under Constraints</span>
+            </div>
+            <h3 class="focus-item__hook">Constraints are the design.</h3>
+            <p class="focus-item__body">Latency, cost, and human attention shape what works.</p>
+          </article>
+          <article class="focus-item">
+            <div class="focus-item__eyebrow">
+              <span class="focus-item__num" aria-hidden="true">05</span>
+              <span class="focus-item__area">Product-Oriented AI</span>
+            </div>
+            <h3 class="focus-item__hook">If it is not usable, it does not matter.</h3>
+            <p class="focus-item__body">People must be able to rely on it.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Work -->
+    <section class="section-wrap" id="work">
+      <div class="container">
+        <div class="work-intro reveal">
+          <div>
+            <p class="section-eyebrow">Portfolio</p>
+            <h2 class="section-title">Selected work</h2>
+          </div>
+          <p class="section-lead">Case-shaped work. Problem, approach, and the thinking behind each decision.</p>
+        </div>
+
+        <div
+          class="work-viewer reveal"
+          data-work-slider
+          tabindex="0"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Selected work. Use arrow buttons, project dots, or keyboard arrows and Home and End keys to change project."
+        >
+          <div class="work-track-wrap">
+            <div class="work-track">
+
+              <!-- Project 1: YouTube comment intelligence -->
+              <article
+                class="work-slide"
+                id="work-slide-youtube"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="Project 1 of 5: YouTube comment intelligence"
+                data-work-index="0"
+              >
+                <div class="work-slide__media">
+                  <div
+                    class="project-carousel"
+                    data-carousel
+                    data-carousel-interval="5500"
+                    aria-roledescription="carousel"
+                    aria-label="YouTube comment intelligence screenshots"
+                  >
+                    <div class="project-carousel-viewport">
+                      <div class="project-carousel-track">
+                        <div class="project-carousel-slide">
+                          <a href="https://lookerstudio.google.com/s/gbf4u5q04WM" target="_blank" rel="noopener noreferrer">
+                            <img
+                              src="https://github.com/user-attachments/assets/0ca772e6-99ca-4230-817b-6f8842ee7e95"
+                              width="1016" height="1439"
+                              alt="YouTube comment analytics — dashboard overview"
+                              loading="lazy" decoding="async"
+                            >
+                          </a>
+                        </div>
+                        <div class="project-carousel-slide">
+                          <a href="https://lookerstudio.google.com/s/gbf4u5q04WM" target="_blank" rel="noopener noreferrer">
+                            <img
+                              src="https://github.com/user-attachments/assets/3f401369-55f1-41d9-81a9-8ae636823e3f"
+                              width="1015" height="1439"
+                              alt="YouTube comment analytics — topics, intent, sentiment and comment list"
+                              loading="lazy" decoding="async"
+                            >
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project-carousel-controls">
+                      <button type="button" class="carousel-btn carousel-prev" aria-label="Previous screenshot">‹</button>
+                      <div class="carousel-dots" role="tablist" aria-label="Screenshots for this project"></div>
+                      <button type="button" class="carousel-btn carousel-next" aria-label="Next screenshot">›</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="work-slide__content">
+                  <div class="work-slide__top">
+                    <h3>YouTube comment intelligence</h3>
+                    <span class="badge">Analytics</span>
+                  </div>
+                  <div class="case-study">
+                    <section class="case-block" aria-labelledby="cs-yt-problem">
+                      <h4 class="case-block__label" id="cs-yt-problem">Problem</h4>
+                      <p>Comment threads hold product and sentiment signal; raw text does not scale to product or strategy decisions.</p>
+                    </section>
+                    <section class="case-block" aria-labelledby="cs-yt-why">
+                      <h4 class="case-block__label" id="cs-yt-why">Why it mattered</h4>
+                      <p>Without a pipeline and a stable ontology, every analysis reinvents categories—BI and stakeholders never get comparable views over time.</p>
+                    </section>
+                    <section class="case-block" aria-labelledby="cs-yt-approach">
+                      <h4 class="case-block__label" id="cs-yt-approach">Approach</h4>
+                      <p>Ingest via YouTube API into layered <strong>BigQuery</strong> tables, LLM enrichment for structured attributes, Streamlit for exploration and Looker Studio for reporting.</p>
+                    </section>
+                    <section class="case-block" aria-labelledby="cs-yt-insight">
+                      <h4 class="case-block__label" id="cs-yt-insight">Key insight</h4>
+                      <p>Unstructured comments become useful only when mapped into consistent sentiment and topic signals—repeatable, decision-grade views for creators and sponsors.</p>
+                    </section>
+                  </div>
+                  <div class="work-slide__links">
+                    <a href="https://github.com/tmy-datamesa/yt-insight-hub" target="_blank" rel="noopener noreferrer">Repository</a>
+                    <a href="https://lookerstudio.google.com/s/gbf4u5q04WM" target="_blank" rel="noopener noreferrer">Looker Studio</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 2: Legal assistant -->
+              <article
+                class="work-slide"
+                id="work-slide-legal"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="Project 2 of 5: Legal assistant"
+                data-work-index="1"
+              >
+                <div class="work-slide__media">
+                  <div
+                    class="project-carousel"
+                    data-carousel
+                    data-carousel-interval="5500"
+                    aria-roledescription="carousel"
+                    aria-label="Legal assistant screenshots"
+                  >
+                    <div class="project-carousel-viewport">
+                      <div class="project-carousel-track">
+                        <div class="project-carousel-slide">
+                          <a href="https://kmk-deploy-csnu3xbifrnaixgypfsa93.streamlit.app" target="_blank" rel="noopener noreferrer">
+                            <img
+                              src="https://github.com/user-attachments/assets/337c6cdb-e3d3-4194-97a7-9d2614f9485f"
+                              width="1331" height="748"
+                              alt="Legal assistant — architecture and stack overview"
+                              loading="lazy" decoding="async"
+                            >
+                          </a>
+                        </div>
+                        <div class="project-carousel-slide">
+                          <a href="https://kmk-deploy-csnu3xbifrnaixgypfsa93.streamlit.app" target="_blank" rel="noopener noreferrer">
+                            <img
+                              src="https://github.com/user-attachments/assets/76113bb6-d2e6-42d9-811c-2ce825219b00"
+                              width="1778" height="967"
+                              alt="Legal assistant — chat UI with sample Q&amp;A and law citations"
+                              loading="lazy" decoding="async"
+                              referrerpolicy="no-referrer"
+                            >
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project-carousel-controls">
+                      <button type="button" class="carousel-btn carousel-prev" aria-label="Previous screenshot">‹</button>
+                      <div class="carousel-dots" role="tablist" aria-label="Screenshots for this project"></div>
+                      <button type="button" class="carousel-btn carousel-next" aria-label="Next screenshot">›</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="work-slide__content">
+                  <div class="work-slide__top">
+                    <h3>Legal assistant — condominium &amp; neighborhood law</h3>
+                    <span class="badge">Agentic system</span>
+                  </div>
+                  <div class="case-study">
+                    <section class="case-block" aria-labelledby="cs-law-problem">
+                      <h4 class="case-block__label" id="cs-law-problem">Problem</h4>
+                      <p>Legal knowledge exists—but everyday apartment and neighborhood disputes rarely get clear, grounded access; people fragment-search or defer to costly advice.</p>
+                    </section>
+                    <section class="case-block" aria-labelledby="cs-law-why">
+                      <h4 class="case-block__label" id="cs-law-why">Why it mattered</h4>
+                      <p>Cost, conflict, and uncertainty compound. In law, hallucination cost is trust and liability—retrieval and grounding are non-negotiable.</p>
+                    </section>
+                    <section class="case-block" aria-labelledby="cs-law-approach">
+                      <h4 class="case-block__label" id="cs-law-approach">Approach</h4>
+                      <p><strong>Agentic routing</strong> to six collections; <strong>ChromaDB</strong> with legally structured chunks; FastAPI on Cloud Run, Streamlit UI, <strong>RAGAS</strong> + <strong>MLflow</strong> in the loop.</p>
+                    </section>
+                    <section class="case-block" aria-labelledby="cs-law-insight">
+                      <h4 class="case-block__label" id="cs-law-insight">Key insight</h4>
+                      <p>Value is accessibility, not clever answers—grounded retrieval makes law usable, not only consultable.</p>
+                    </section>
+                  </div>
+                  <div class="work-slide__links">
+                    <a href="https://github.com/tmy-datamesa/kmk-deploy" target="_blank" rel="noopener noreferrer">Repository</a>
+                    <a href="https://kmk-deploy-csnu3xbifrnaixgypfsa93.streamlit.app" target="_blank" rel="noopener noreferrer">Live app</a>
+                    <a href="https://legal-rag-api-232706383774.europe-west1.run.app/docs" target="_blank" rel="noopener noreferrer">API docs</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 3: Steam marketplace analytics -->
+              <article
+                class="work-slide"
+                id="work-slide-steam"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="Project 3 of 5: Steam marketplace analytics"
+                data-work-index="2"
+              >
+                <div class="work-slide__media">
+                  <div
+                    class="project-carousel"
+                    data-carousel
+                    data-carousel-interval="5500"
+                    aria-roledescription="carousel"
+                    aria-label="Steam marketplace analytics screenshots"
+                  >
+                    <div class="project-carousel-viewport">
+                      <div class="project-carousel-track">
+                        <div class="project-carousel-slide">
+                          <a href="https://github.com/tmy-datamesa/steam-dataset-2025-insights" target="_blank" rel="noopener noreferrer">
+                            <img
+                              src="https://raw.githubusercontent.com/tmy-datamesa/steam-dataset-2025-insights/main/image.png"
+                              width="1200" height="675"
+                              alt="Steam 2025 — executive summary visual"
+                              loading="lazy" decoding="async"
+                            >
+                          </a>
+                        </div>
+                        <div class="project-carousel-slide">
+                          <a href="https://lookerstudio.google.com/reporting/14eafbaa-cbb1-4a15-baf2-8e5f128a12e3" target="_blank" rel="noopener noreferrer">
+                            <img
+                              src="https://github.com/user-attachments/assets/f9a6dc42-9468-4b7d-b79a-0e3b536150ad"
+                              width="1194" height="892"
+                              alt="Steam — Looker Studio dashboard KPIs and market trend"
+                              loading="lazy" decoding="async"
+                            >
+                          </a>
+                        </div>
+                        <div class="project-carousel-slide">
+                          <a href="https://github.com/tmy-datamesa/steam-dataset-2025-insights" target="_blank" rel="noopener noreferrer">
+                            <img
+                              src="https://raw.githubusercontent.com/tmy-datamesa/steam-dataset-2025-insights/main/image-1.png"
+                              width="1200" height="675"
+                              alt="Steam analysis — chart from README"
+                              loading="lazy" decoding="async"
+                            >
+                          </a>
+                        </div>
+                        <div class="project-carousel-slide">
+                          <a href="https://github.com/tmy-datamesa/steam-dataset-2025-insights" target="_blank" rel="noopener noreferrer">
+                            <img
+                              src="https://raw.githubusercontent.com/tmy-datamesa/steam-dataset-2025-insights/main/image-3.png"
+                              width="1200" height="675"
+                              alt="Steam analysis — chart from README"
+                              loading="lazy" decoding="async"
+                            >
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project-carousel-controls">
+                      <button type="button" class="carousel-btn carousel-prev" aria-label="Previous screenshot">‹</button>
+                      <div class="carousel-dots" role="tablist" aria-label="Screenshots for this project"></div>
+                      <button type="button" class="carousel-btn carousel-next" aria-label="Next screenshot">›</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="work-slide__content">
+                  <div class="work-slide__top">
+                    <h3>Steam marketplace analytics &amp; forecasting</h3>
+                    <span class="badge">240k+ games</span>
+                  </div>
+                  <div class="case-study">
+                    <section class="case-block" aria-labelledby="cs-steam-problem">
+                      <h4 class="case-block__label" id="cs-steam-problem">Problem</h4>
+                      <p>The market is large, but signal is weak—price and performance drivers hide behind noise and uneven data quality.</p>
+                    </section>
+                    <section class="case-block" aria-labelledby="cs-steam-why">
+                      <h4 class="case-block__label" id="cs-steam-why">Why it mattered</h4>
+                      <p>Without an honest data layer, forecasts mislead. Weak signals must surface, not disappear, if decisions are to be trusted.</p>
+                    </section>
+                    <section class="case-block" aria-labelledby="cs-steam-approach">
+                      <h4 class="case-block__label" id="cs-steam-approach">Approach</h4>
+                      <p><strong>BigQuery</strong> + <strong>dbt</strong>, Prophet for growth, gradient boosting / RF for price drivers, Looker Studio for exploration.</p>
+                    </section>
+                    <section class="case-block" aria-labelledby="cs-steam-insight">
+                      <h4 class="case-block__label" id="cs-steam-insight">Key insight</h4>
+                      <p>Not all signals deserve attention—Metacritic vs price is weak (<strong>r ≈ 0.23</strong>). Removing noise is as valuable as modeling signal.</p>
+                    </section>
+                  </div>
+                  <div class="work-slide__links">
+                    <a href="https://github.com/tmy-datamesa/steam-dataset-2025-insights" target="_blank" rel="noopener noreferrer">Repository</a>
+                    <a href="https://lookerstudio.google.com/reporting/14eafbaa-cbb1-4a15-baf2-8e5f128a12e3" target="_blank" rel="noopener noreferrer">Looker Studio</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 4: Brazilian e-commerce -->
+              <article
+                class="work-slide"
+                id="work-slide-olist"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="Project 4 of 5: Brazilian e-commerce analytics"
+                data-work-index="3"
+              >
+                <div class="work-slide__media">
+                  <div
+                    class="project-carousel"
+                    data-carousel
+                    data-carousel-interval="5500"
+                    aria-roledescription="carousel"
+                    aria-label="Olist: BigQuery SQL case study and CEO Dash panel screenshots"
+                  >
+                    <div class="project-carousel-viewport">
+                      <div class="project-carousel-track">
+                        <div class="project-carousel-slide">
+                          <a href="https://github.com/tmy-datamesa/Olist-ECommerce-SQL-Python-CaseStudy" target="_blank" rel="noopener noreferrer">
+                            <img
+                              src="https://github.com/user-attachments/assets/c5ba53b3-1376-4f4e-bc92-c2954191a1d9"
+                              width="1863" height="1046"
+                              alt="Olist BigQuery SQL case study — screenshot 1"
+                              loading="lazy" decoding="async"
+                            >
+                          </a>
+                        </div>
+                        <div class="project-carousel-slide">
+                          <a href="https://github.com/tmy-datamesa/Olist-ECommerce-SQL-Python-CaseStudy" target="_blank" rel="noopener noreferrer">
+                            <img
+                              src="https://github.com/user-attachments/assets/634bd886-8482-4bd6-acd8-b90b1858b943"
+                              width="1866" height="1041"
+                              alt="Olist BigQuery SQL case study — screenshot 2"
+                              loading="lazy" decoding="async"
+                            >
+                          </a>
+                        </div>
+                        <div class="project-carousel-slide">
+                          <a href="https://github.com/tmy-datamesa/CEO_talebi_takim1" target="_blank" rel="noopener noreferrer">
+                            <img
+                              src="https://github.com/user-attachments/assets/3dc3f2ce-f7b5-4b3a-9e11-11a39ca7952e"
+                              width="1320" height="1027"
+                              alt="Olist CEO management dashboard — satisfaction drivers"
+                              loading="lazy" decoding="async"
+                            >
+                          </a>
+                        </div>
+                        <div class="project-carousel-slide">
+                          <a href="https://github.com/tmy-datamesa/CEO_talebi_takim1" target="_blank" rel="noopener noreferrer">
+                            <img
+                              src="https://github.com/user-attachments/assets/338283c0-d25d-4fc5-890f-24b32900658a"
+                              width="1315" height="1202"
+                              alt="Olist CEO management dashboard — financial summary and waterfall"
+                              loading="lazy" decoding="async"
+                            >
+                          </a>
+                        </div>
+                        <div class="project-carousel-slide">
+                          <a href="https://github.com/tmy-datamesa/CEO_talebi_takim1" target="_blank" rel="noopener noreferrer">
+                            <img
+                              src="https://github.com/user-attachments/assets/116eaf37-9709-4aba-9376-2e42f5f45c09"
+                              width="1313" height="1210"
+                              alt="Olist CEO management dashboard — seller portfolio optimization"
+                              loading="lazy" decoding="async"
+                            >
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project-carousel-controls">
+                      <button type="button" class="carousel-btn carousel-prev" aria-label="Previous screenshot">‹</button>
+                      <div class="carousel-dots" role="tablist" aria-label="Screenshots for this project"></div>
+                      <button type="button" class="carousel-btn carousel-next" aria-label="Next screenshot">›</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="work-slide__content">
+                  <div class="work-slide__top">
+                    <h3>Brazilian e-commerce analytics</h3>
+                    <span class="badge">100K+ orders</span>
+                  </div>
+                  <div class="case-study">
+                    <section class="case-block" aria-labelledby="cs-olist-problem">
+                      <h4 class="case-block__label" id="cs-olist-problem">Problem</h4>
+                      <p>Public e-commerce data is easy to quote and hard to trust—analysts need clear numbers; leaders need profit context, not adjectives.</p>
+                    </section>
+                    <section class="case-block" aria-labelledby="cs-olist-why">
+                      <h4 class="case-block__label" id="cs-olist-why">Why it mattered</h4>
+                      <p>One story, two surfaces: SQL work for rigor, then a small management dashboard anyone can read.</p>
+                    </section>
+                    <section class="case-block" aria-labelledby="cs-olist-approach">
+                      <h4 class="case-block__label" id="cs-olist-approach">Approach</h4>
+                      <p><a href="https://github.com/tmy-datamesa/Olist-ECommerce-SQL-Python-CaseStudy" target="_blank" rel="noopener noreferrer">SQL project</a>: clean joins, headline KPIs (~<strong>15.8M BRL</strong> revenue, high on-time delivery, ~<strong>6%</strong> repeat buyers). <a href="https://github.com/tmy-datamesa/CEO_talebi_takim1" target="_blank" rel="noopener noreferrer">Dash</a>: satisfaction translated into money on the page.</p>
+                    </section>
+                    <section class="case-block" aria-labelledby="cs-olist-insight">
+                      <h4 class="case-block__label" id="cs-olist-insight">Key insight</h4>
+                      <p>Operations look healthy; loyalty does not—the dashboard's job is to show that gap in plain money terms.</p>
+                    </section>
+                  </div>
+                  <div class="work-slide__links">
+                    <a href="https://github.com/tmy-datamesa/Olist-ECommerce-SQL-Python-CaseStudy" target="_blank" rel="noopener noreferrer">Repository — SQL</a>
+                    <a href="https://github.com/tmy-datamesa/CEO_talebi_takim1" target="_blank" rel="noopener noreferrer">Repository — CEO Dash</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 5: Data Mesa -->
+              <article
+                class="work-slide"
+                id="work-slide-mesa"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="Project 5 of 5: Data Mesa"
+                data-work-index="4"
+              >
+                <div class="work-slide__media">
+                  <div
+                    class="project-carousel"
+                    data-carousel
+                    data-carousel-interval="5500"
+                    aria-roledescription="carousel"
+                    aria-label="Data Mesa — screenshots from the GitHub README"
+                  >
+                    <div class="project-carousel-viewport">
+                      <div class="project-carousel-track">
+                        <div class="project-carousel-slide">
+                          <a href="https://github.com/tmy-datamesa/Data-Mesa-Focus#readme" target="_blank" rel="noopener noreferrer">
+                            <img
+                              src="assets/data-mesa-readme-1.png"
+                              width="1558" height="900"
+                              alt="Data Mesa — focus timer, forest ambience, task queue, and reflective quote"
+                              loading="lazy" decoding="async"
+                            >
+                          </a>
+                        </div>
+                        <div class="project-carousel-slide">
+                          <a href="https://github.com/tmy-datamesa/Data-Mesa-Focus#readme" target="_blank" rel="noopener noreferrer">
+                            <img
+                              src="assets/data-mesa-readme-2.png"
+                              width="1544" height="905"
+                              alt="Data Mesa — break mode, space scene, lofi player, and LIFE task list"
+                              loading="lazy" decoding="async"
+                            >
+                          </a>
+                        </div>
+                        <div class="project-carousel-slide">
+                          <a href="https://github.com/tmy-datamesa/Data-Mesa-Focus#readme" target="_blank" rel="noopener noreferrer">
+                            <img
+                              src="assets/data-mesa-readme-3.png"
+                              width="1545" height="908"
+                              alt="Data Mesa — focus session with night-rain scene and ambient controls"
+                              loading="lazy" decoding="async"
+                            >
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project-carousel-controls">
+                      <button type="button" class="carousel-btn carousel-prev" aria-label="Previous screenshot">‹</button>
+                      <div class="carousel-dots" role="tablist" aria-label="Screenshots for this project"></div>
+                      <button type="button" class="carousel-btn carousel-next" aria-label="Next screenshot">›</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="work-slide__content">
+                  <div class="work-slide__top">
+                    <h3>Data Mesa — calm focus workspace</h3>
+                    <span class="badge">Product</span>
+                  </div>
+                  <div class="case-study">
+                    <section class="case-block" aria-labelledby="cs-mesa-problem">
+                      <h4 class="case-block__label" id="cs-mesa-problem">Problem</h4>
+                      <p>Most focus tools demand attention—features, tracking, and pressure fragment attention further.</p>
+                    </section>
+                    <section class="case-block" aria-labelledby="cs-mesa-why">
+                      <h4 class="case-block__label" id="cs-mesa-why">Why it mattered</h4>
+                      <p>Focus follows environment and cognitive load; without a calm, predictable space, attention destabilizes.</p>
+                    </section>
+                    <section class="case-block" aria-labelledby="cs-mesa-approach">
+                      <h4 class="case-block__label" id="cs-mesa-approach">Approach</h4>
+                      <p>Ambient-first workspace: minimal UI, controlled sensory input, familiar scenes (rain, night, forest). Next.js, TypeScript, CSS Modules; bilingual UX; <strong>Vercel</strong>. State stays local—your sessions stay yours.</p>
+                    </section>
+                    <section class="case-block" aria-labelledby="cs-mesa-insight">
+                      <h4 class="case-block__label" id="cs-mesa-insight">Key insight</h4>
+                      <p>Focus is regulation, not timers—environment shapes attention. Shipped as <a href="https://thinkslow.vercel.app/" target="_blank" rel="noopener noreferrer">thinkslow.vercel.app</a>.</p>
+                    </section>
+                  </div>
+                  <div class="work-slide__links">
+                    <a href="https://thinkslow.vercel.app/" target="_blank" rel="noopener noreferrer">Live app</a>
+                    <a href="https://github.com/tmy-datamesa/Data-Mesa-Focus" target="_blank" rel="noopener noreferrer">Repository</a>
+                  </div>
+                </div>
+              </article>
+
+            </div><!-- /work-track -->
+          </div><!-- /work-track-wrap -->
+
+          <!-- Navigation chrome -->
+          <div class="work-nav" aria-hidden="false">
+            <button
+              type="button"
+              class="work-arrow work-arrow--prev"
+              aria-label="Previous project"
+            >←</button>
+            <div class="work-nav__center">
+              <span class="work-counter" aria-live="polite">1 / 5</span>
+              <div class="work-dots" role="tablist" aria-label="Choose project"></div>
+            </div>
+            <button
+              type="button"
+              class="work-arrow work-arrow--next"
+              aria-label="Next project"
+            >→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ecosystem -->
+    <section class="section-wrap" id="ecosystem">
+      <div class="container">
+        <div class="reveal">
+          <p class="section-eyebrow">Build</p>
+          <h2 class="section-title">Ecosystem</h2>
+          <p class="ecosystem__lead">
+            Live products show how ideas behave.<br>
+            Technical work shows how they are built.
+          </p>
+        </div>
+        <div class="ecosystem__cols reveal">
+          <article class="ecosystem-item">
+            <h3 class="ecosystem-item__title">Think Slow</h3>
+            <a
+              href="https://thinkslow.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="ecosystem-link"
+            >thinkslow.vercel.app ↗</a>
+            <p class="ecosystem-item__desc">Ambient-first focus workspace. Regulates attention instead of demanding it.</p>
+          </article>
+          <article class="ecosystem-item">
+            <h3 class="ecosystem-item__title">Data Masası</h3>
+            <a
+              href="https://www.youtube.com/@DataMasasi"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="ecosystem-link"
+              aria-label="Data Masası on YouTube"
+            >youtube ↗</a>
+            <p class="ecosystem-item__desc">Structured tutorials on SQL, BigQuery, and analytics—teaching as a slow, quiet surface.</p>
+          </article>
+          <article class="ecosystem-item">
+            <h3 class="ecosystem-item__title">Technical Work</h3>
+            <a
+              href="https://github.com/tmy-datamesa"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="ecosystem-link"
+            >github.com/tmy-datamesa ↗</a>
+            <p class="ecosystem-item__desc">Experiments and pipelines where the point is the problem, not the presentation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer class="site-footer" id="contact" aria-labelledby="contact-label">
+      <div class="site-footer__inner">
+        <div class="site-footer__row">
+          <div class="site-footer__label-group">
+            <span class="site-footer__label" id="contact-label">Contact</span>
+            <span class="site-footer__location">Beyoğlu, Istanbul</span>
+          </div>
+          <span class="site-footer__vsep" aria-hidden="true"></span>
+          <div class="site-footer__main">
+            <p class="site-footer__message">Open to meaningful work<br>and thoughtful collaboration.</p>
+            <p class="site-footer__email-line">
+              <span class="site-footer__arrow" aria-hidden="true">→</span>
+              <a class="site-footer__email" href="mailto:tumayturhan01@gmail.com">tumayturhan01@gmail.com</a>
+            </p>
+          </div>
+          <span class="site-footer__vsep" aria-hidden="true"></span>
+          <p class="site-footer__links">
+            <a href="https://www.linkedin.com/in/tumay-turhan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <span class="site-footer__dot" aria-hidden="true"> · </span>
+            <a href="https://github.com/tmy-datamesa" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <span class="site-footer__dot" aria-hidden="true"> · </span>
+            <a href="https://www.youtube.com/@DataMasasi" target="_blank" rel="noopener noreferrer">YouTube</a>
+          </p>
+          <span class="site-footer__vsep" aria-hidden="true"></span>
+          <p class="site-footer__tagline">htyiacım olation shapes your reality.</p>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

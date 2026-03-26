@@ -1,0 +1,17 @@
+# Claude / AI tooling
+CLAUDE.md
+.cursor/
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.swp
+*.swo
+
+# Temp / build artefacts
+*.log
+*.tmp
