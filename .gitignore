@@ -15,3 +15,7 @@ Thumbs.db
 # Temp / build artefacts
 *.log
 *.tmp
+
+# Local portfolio trees — not pushed to GitHub
+portfolio/
+github_portfolio/

@@ -1041,6 +1041,34 @@ body::before {
   color: var(--text-3);
 }
 
+.site-footer__credit {
+  margin: var(--s6) 0 0;
+  padding-top: var(--s5);
+  border-top: 1px solid var(--line-mid);
+  font-family: var(--sans);
+  font-size: var(--tx);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-4);
+}
+.site-footer__credit-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color var(--dur) var(--ease), border-color var(--dur) var(--ease), letter-spacing var(--dur) var(--ease);
+}
+.site-footer__credit-link:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent-mid);
+  letter-spacing: 0.08em;
+}
+.site-footer__credit-arrow {
+  display: inline-block;
+  margin-left: 0.2em;
+  font-size: 0.9em;
+  opacity: 0.75;
+}
+
 /* === SCROLL REVEAL ======================================= */
 .reveal {
   opacity: 0;
