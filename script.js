@@ -127,6 +127,19 @@
     const interval = parseInt(el.dataset.carouselInterval, 10) || 5500;
     let timer;
 
+    /* Inject carousel-mid wrapper + visually-hidden count */
+    const mid = document.createElement('div');
+    mid.className = 'carousel-mid';
+    const countEl = document.createElement('span');
+    countEl.className = 'carousel-count';
+    countEl.setAttribute('aria-live', 'polite');
+    countEl.textContent = `1 / ${total}`;
+    if (controlsEl && dotsWrap) {
+      controlsEl.insertBefore(mid, dotsWrap);
+      mid.appendChild(countEl);
+      mid.appendChild(dotsWrap);
+    }
+
     /* Build dots */
     slides.forEach((_, i) => {
       const dot = document.createElement('button');
@@ -144,6 +157,7 @@
       current = ((index % total) + total) % total;
       dots[current].classList.add('is-active');
       track.style.transform = `translateX(-${current * 100}%)`;
+      if (countEl) countEl.textContent = `${current + 1} / ${total}`;
     };
 
     const resetTimer = () => {
@@ -157,6 +171,27 @@
     /* Pause on hover */
     el.addEventListener('mouseenter', () => clearInterval(timer));
     el.addEventListener('mouseleave', resetTimer);
+
+    /* Mouse drag */
+    let cdStartX = 0;
+    let cdActive = false;
+    el.addEventListener('mousedown', (e) => {
+      if (e.button !== 0) return;
+      cdStartX = e.clientX;
+      cdActive = true;
+      clearInterval(timer);
+      el.style.userSelect = 'none';
+    });
+    const endCarouselDrag = (clientX) => {
+      if (!cdActive) return;
+      cdActive = false;
+      el.style.userSelect = '';
+      const dx = clientX - cdStartX;
+      if (Math.abs(dx) > 40) { goto(dx < 0 ? current + 1 : current - 1); }
+      resetTimer();
+    };
+    el.addEventListener('mouseup',    (e) => endCarouselDrag(e.clientX));
+    el.addEventListener('mouseleave', (e) => endCarouselDrag(e.clientX));
 
     /* Start auto-advance */
     resetTimer();
