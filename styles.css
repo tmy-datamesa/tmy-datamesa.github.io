@@ -891,6 +891,11 @@ body::before {
   object-position: top center;
   display: block;
 }
+.project-carousel-slide--contain img {
+  object-fit: contain;
+  padding: 12px;
+  background: #f8fafc;
+}
 
 /* Controls bar — subtle gradient so arrows/dots read on any image */
 .project-carousel-controls {
